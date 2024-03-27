@@ -1,4 +1,4 @@
-package kr.swu.spring_rest.controller;
+package kr.su.spring_rest.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
