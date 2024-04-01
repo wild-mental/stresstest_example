@@ -23,6 +23,7 @@ public class CpuBoundController {
                 System.out.print(".");
             }
         }
+        System.out.println();
         return output;
     }
 
