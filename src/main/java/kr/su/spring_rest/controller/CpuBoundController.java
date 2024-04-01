@@ -15,9 +15,13 @@ public class CpuBoundController {
 
     @RequestMapping("/hash")
     public String getHash(String input) throws NoSuchAlgorithmException{
+        System.out.println("input : " + input);
         String output = input;
         for(int i = 0; i < 100_000; i++){
             output = getMD5(output);
+            if (i % 1_000 == 0) {
+                System.out.print(".");
+            }
         }
         return output;
     }
